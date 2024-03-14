@@ -46,5 +46,5 @@ Para executar este projeto, você precisará de:
 
 3. Navegue até a pasta do projeto clonado e execute o script principal utilizando o Python:
 
-        python main.py
+        python src/main.py
 
