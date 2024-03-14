@@ -7,7 +7,7 @@
 
 </div>
 
-Este projeto é a segunda atividade prática focada em bancos de dados não relacionais, com o intuito de aprofundar conhecimentos e habilidades no uso do MongoDB, um sistema de gerenciamento de banco de dados orientado a documentos, em conjunto com a linguagem de programação Python. O projeto visa desenvolver e demonstrar operações fundamentais de CRUD (Create, Read, Update, Delete), aplicadas em um contexto real de aplicação.
+Este projeto é a segunda atividade prática da disciplina de Bancos de Dados não Relacional, com o intuito de aprofundar conhecimentos e habilidades no uso do MongoDB, um sistema de gerenciamento de banco de dados orientado a documentos, em conjunto com a linguagem de programação Python. O projeto visa desenvolver e demonstrar operações fundamentais de CRUD (Create, Read, Update, Delete), aplicadas em um contexto real de aplicação.
 
 ## 🎯 Objetivos:
 
@@ -22,7 +22,9 @@ Para executar este projeto, você precisará de:
 
 - Python 3.6 ou superior instalado em seu sistema.
 - Acesso ao MongoDB, que pode ser uma instância local ou em nuvem (MongoDB Atlas).
-- Biblioteca pymongo instalada, que pode ser feita através do comando pip install pymongo.
+- Biblioteca pymongo instalada, que pode ser feita através do comando
+
+        pip install pymongo.
 
 ## ⚙️ Configuração e Execução
 
@@ -45,3 +47,4 @@ Para executar este projeto, você precisará de:
 3. Navegue até a pasta do projeto clonado e execute o script principal utilizando o Python:
 
         python main.py
+
