@@ -40,7 +40,7 @@ Para executar este projeto, você precisará de:
 
 1. Clone o Repositório:
 
-        git clone https://github.com/felipe-sant/atv1-bd3.git
+        git clone https://github.com/felipe-sant/atv2-bd3.git
 
 2. Edite o arquivo de configuração com as credenciais do seu banco de dados MongoDB.
 
