@@ -1,3 +1,8 @@
+from menu.produtos.produtosCreateMenu import produtosCreateMenu
+from menu.produtos.produtosReadMenu import produtosReadMenu
+from menu.produtos.produtosUpdateMenu import produtosUpdateMenu
+from menu.produtos.produtosDeleteMenu import produtosDeleteMenu
+
 def produtosMenu():
     execusao = True
 
@@ -14,17 +19,13 @@ def produtosMenu():
         opcao = input("Digite a opção desejada: ")
 
         if opcao == "1":
-            print("Criar Produto")
-            input()
+            produtosCreateMenu()
         elif opcao == "2":
-            print("Ler Produto")
-            input()
+            produtosReadMenu()
         elif opcao == "3":
-            print("Atualizar Produto")
-            input()
+            produtosUpdateMenu()
         elif opcao == "4":
-            print("Deletar Produto")
-            input()
+            produtosDeleteMenu()
         elif opcao == "0":
             execusao = False
         else:
