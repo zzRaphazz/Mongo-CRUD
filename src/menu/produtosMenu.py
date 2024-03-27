@@ -4,9 +4,9 @@ from menu.produtos.produtosUpdateMenu import produtosUpdateMenu
 from menu.produtos.produtosDeleteMenu import produtosDeleteMenu
 
 def produtosMenu():
-    execusao = True
+    execucao = True
 
-    while execusao:
+    while execucao:
         print("-=-"*20)
         print("Produtos")
         print("1 - Criar Produto")
@@ -27,6 +27,6 @@ def produtosMenu():
         elif opcao == "4":
             produtosDeleteMenu()
         elif opcao == "0":
-            execusao = False
+            execucao = False
         else:
             print("Opção inválida!")
