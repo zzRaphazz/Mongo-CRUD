@@ -7,14 +7,14 @@ def comprasMenu():
     execucao = True
 
     while execucao:
-        print("-=-"*10)
+        print("-=-"*20)
         print("Compras")
         print("1 - Criar Compra")
         print("2 - Ler Compra")
         print("3 - Atualizar Compra")
         print("4 - Deletar Compra")
         print("0 - Voltar")
-        print("-=-"*10)
+        print("-=-"*20)
 
         opcao = input("Digite a opção desejada: ")
 

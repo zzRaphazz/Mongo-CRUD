@@ -2,14 +2,14 @@ def vendedorMenu():
     execucao = True
 
     while execucao:
-        print("-=-"*10)
+        print("-=-"*20)
         print("Vendedores")
         print("1 - Criar Vendedor")
         print("2 - Ler Vendedor")
         print("3 - Atualizar Vendedor")
         print("4 - Deletar Vendedor")
         print("0 - Voltar")
-        print("-=-"*10)
+        print("-=-"*20)
 
         opcao = input("Digite a opção desejada: ")
 
