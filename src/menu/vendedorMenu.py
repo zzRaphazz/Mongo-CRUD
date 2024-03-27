@@ -1,3 +1,8 @@
+from menu.vendedor.vendedorCreateMenu import vendedorCreateMenu
+from menu.vendedor.vendedorReadMenu import vendedorReadMenu
+from menu.vendedor.vendedorUpdateMenu import vendedorUpdateMenu
+from menu.vendedor.vendedorDeleteMenu import vendedorDeleteMenu
+
 def vendedorMenu():
     execucao = True
 
@@ -14,17 +19,13 @@ def vendedorMenu():
         opcao = input("Digite a opção desejada: ")
 
         if opcao == "1":
-            print("Criar Vendedor")
-            input()
+            vendedorCreateMenu()
         elif opcao == "2":
-            print("Ler Vendedor")
-            input()
+            vendedorReadMenu()
         elif opcao == "3":
-            print("Atualizar Vendedor")
-            input()
+            vendedorUpdateMenu()
         elif opcao == "4":
-            print("Deletar Vendedor")
-            input()
+            vendedorDeleteMenu()
         elif opcao == "0":
             execucao = False
         else:
