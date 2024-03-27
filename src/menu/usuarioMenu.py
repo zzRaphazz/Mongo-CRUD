@@ -1,3 +1,8 @@
+from menu.usuario.usuarioCreateMenu import usuarioCreateMenu
+from menu.usuario.usuarioReadMenu import usuarioReadMenu
+from menu.usuario.usuarioUpdateMenu import usuarioUpdateMenu
+from menu.usuario.usuarioDeleteMenu import usuarioDeleteMenu
+
 def usuarioMenu():
     execucao = True
 
@@ -14,17 +19,13 @@ def usuarioMenu():
         opcao = input("Digite a opção desejada: ")
 
         if opcao == "1":
-            print("Criar Usuário")
-            input()
+            usuarioCreateMenu()
         elif opcao == "2":
-            print("Ler Usuário")
-            input()
+            usuarioReadMenu()
         elif opcao == "3":
-            print("Atualizar Usuário")
-            input()
+            usuarioUpdateMenu()
         elif opcao == "4":
-            print("Deletar Usuário")
-            input()
+            usuarioDeleteMenu()
         elif opcao == "0":
             execucao = False
         else:
