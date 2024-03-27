@@ -1,3 +1,8 @@
+from menu.compras.comprasCreateMenu import comprasCreateMenu
+from menu.compras.comprasReadMenu import comprasReadMenu
+from menu.compras.comprasUpdateMenu import comprasUpdateMenu
+from menu.compras.comprasDeleteMenu import comprasDeleteMenu
+
 def comprasMenu():
     execucao = True
 
@@ -14,17 +19,13 @@ def comprasMenu():
         opcao = input("Digite a opção desejada: ")
 
         if opcao == "1":
-            print("Criar Compra")
-            input()
+            comprasCreateMenu()
         elif opcao == "2":
-            print("Ler Compra")
-            input()
+            comprasReadMenu()
         elif opcao == "3":
-            print("Atualizar Compra")
-            input()
+            comprasUpdateMenu()
         elif opcao == "4":
-            print("Deletar Compra")
-            input()
+            comprasDeleteMenu()
         elif opcao == "0":
             execucao = False
         else:
