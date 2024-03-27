@@ -1,4 +1,5 @@
 from menu.comprasMenu import comprasMenu
+from menu.usuarioMenu import usuarioMenu
 
 execucao = True
 
@@ -20,8 +21,7 @@ while execucao:
         print("Produtos")
         input()
     elif opcao == "3":
-        print("Usuários")
-        input()
+        usuarioMenu()
     elif opcao == "4":
         print("Vendedores")
         input()
