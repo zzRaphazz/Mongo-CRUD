@@ -1,3 +1,8 @@
+from database.usuarios.usuarioUpdate import usuarioUpdate
+
 def usuarioUpdateMenu():
-    print("\nAtualizar Usuário\n")
-    input()
+    filtro = {
+        "nome": str(input("Digite o nome do usuario: "))
+    }
+
+    usuarioUpdate(filtro)
