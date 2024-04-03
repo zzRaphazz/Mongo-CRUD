@@ -10,6 +10,7 @@ def usuarioRead(filter):
     print()
     if usuarios == []:
         print("Nenhum usuario com esse filtro encontrado!")
+        input()
     else:
         for user in usuarios:
             print("ID:", user["_id"])
@@ -28,6 +29,7 @@ def usuarioReadAll():
     print()
     if usuarios == []:
         print("Nenhum usuario encontrado no sistema!")
+        input()
     else:
         for user in usuarios:
             print("ID:", user["_id"])

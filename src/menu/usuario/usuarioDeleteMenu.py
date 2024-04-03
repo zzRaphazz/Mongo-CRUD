@@ -1,3 +1,8 @@
+from database.usuarios.usuarioDelete import usuarioDelete
+
 def usuarioDeleteMenu():
-    print("\nDeletar Usuário\n")
+    filtro = {
+        "nome": input("Digite o nome do usuario: ")
+    }
+    usuarioDelete(filtro)
     input()
