@@ -3,7 +3,7 @@ from database.usuarios.usuarioRead import usuarioRead, usuarioReadAll
 def usuarioReadMenu():
     
     filtro = {
-        "nome": str(input("Digite um nome: "))
+        "nome": str(input("Digite um nome: ")).lower()
     }
 
     if filtro["nome"] == "":

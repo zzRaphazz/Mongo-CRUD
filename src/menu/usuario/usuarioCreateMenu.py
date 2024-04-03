@@ -5,5 +5,13 @@ def usuarioCreateMenu():
     endereco = str(input("Digite um endereço: "))
     rg = str(input("Digite um rg: "))
 
-    usuarioCreate(nome, endereco, rg)
+    if nome == "":
+        print()
+        print("Nome não pode ser vazio!")
+        input()
+        return
+
+    usuarioCreate(
+        nome.lower(), endereco.lower(), rg.lower()
+    )
     
