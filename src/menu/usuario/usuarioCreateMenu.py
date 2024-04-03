@@ -1,9 +1,9 @@
-from database.usuarios.usuarioCreate import createUsuario
+from database.usuarios.usuarioCreate import usuarioCreate
 
 def usuarioCreateMenu():
     nome = str(input("Digite um nome: "))
     endereco = str(input("Digite um endereço: "))
     rg = str(input("Digite um rg: "))
 
-    createUsuario(nome, endereco, rg)
+    usuarioCreate(nome, endereco, rg)
     

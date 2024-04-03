@@ -1,6 +1,6 @@
 from database.connection import database
 
-def createUsuario(nome, endereco, rg):
+def usuarioCreate(nome, endereco, rg):
     global database
     usuario = {
         "nome": nome,

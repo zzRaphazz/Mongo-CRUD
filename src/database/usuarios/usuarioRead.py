@@ -1,6 +1,6 @@
 from database.connection import database
 
-def readUser(filter):
+def usuarioRead(filter):
     global database
     usuarios = []
 
@@ -19,7 +19,7 @@ def readUser(filter):
             print("RG:", user["rg"])
             input()
 
-def readAllUser():
+def usuarioReadAll():
     global database
     usuarios = []
 

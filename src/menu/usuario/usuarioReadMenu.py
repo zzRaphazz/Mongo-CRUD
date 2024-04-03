@@ -1,4 +1,4 @@
-from database.usuarios.usuarioRead import readAllUser, readUser
+from database.usuarios.usuarioRead import usuarioRead, usuarioReadAll
 
 def usuarioReadMenu():
     
@@ -7,6 +7,6 @@ def usuarioReadMenu():
     }
 
     if filtro["nome"] == "":
-        readAllUser()
+        usuarioReadAll()
     else:
-        readUser(filtro)
+        usuarioRead(filtro)
