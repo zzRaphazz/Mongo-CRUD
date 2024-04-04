@@ -1,12 +1,8 @@
 from database.connection import database
 
-def usuarioCreate(nome, endereco, rg):
+def usuarioCreate(usuario):
     global database
-    usuario = {
-        "nome": nome,
-        "endereco": endereco,
-        "rg": rg
-    }
+    
 
     try:
         database.usuario.insert_one(usuario)

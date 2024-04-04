@@ -11,7 +11,11 @@ def usuarioCreateMenu():
         input()
         return
 
-    usuarioCreate(
-        nome.lower(), endereco.lower(), rg.lower()
-    )
+    usuario = {
+        "nome": nome.lower(),
+        "endereco": endereco.lower(),
+        "rg": rg.lower()
+    }
+
+    usuarioCreate(usuario)
     
