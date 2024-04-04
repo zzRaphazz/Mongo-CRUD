@@ -1,3 +1,12 @@
+from database.produto.produtoRead import produtoRead, produtoReadAll
+
 def produtoReadMenu():
-    print("\nLer Produto\n")
-    input()
+    
+    filtro = {
+        "nome": str(input("Digite um nome: ")).lower()
+    }
+
+    if filtro["nome"] == "":
+        produtoReadAll()
+    else:
+        produtoRead(filtro)
