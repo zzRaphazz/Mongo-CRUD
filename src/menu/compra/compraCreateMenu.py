@@ -1,7 +1,7 @@
 import datetime
 
 
-def comprasCreateMenu():
+def compraCreateMenu():
     
     # Data
     data_compra = str(input("Digite a data da compra: (dd/mm/aaaa) "))
@@ -16,7 +16,7 @@ def comprasCreateMenu():
 
     compra ={
         "usuario": {},
-        "produtos": [
+        "produto": [
             {}
         ],
         "data_compra": data_compra,

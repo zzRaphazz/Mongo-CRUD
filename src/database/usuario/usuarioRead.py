@@ -2,17 +2,17 @@ from database.connection import database
 
 def usuarioRead(filter):
     global database
-    usuarios = []
+    usuario = []
 
     for user in database.usuario.find(filter):
-        usuarios.append(user)
+        usuario.append(user)
 
     print()
-    if usuarios == []:
+    if usuario == []:
         print("Nenhum usuario com esse filtro encontrado!")
         input()
     else:
-        for user in usuarios:
+        for user in usuario:
             print("ID:", user["_id"])
             print("Nome:", user["nome"])
             print("Endereço:", user["endereco"])
@@ -21,17 +21,17 @@ def usuarioRead(filter):
 
 def usuarioReadAll():
     global database
-    usuarios = []
+    usuario = []
 
     for user in database.usuario.find():
-        usuarios.append(user)
+        usuario.append(user)
 
     print()
-    if usuarios == []:
+    if usuario == []:
         print("Nenhum usuario encontrado no sistema!")
         input()
     else:
-        for user in usuarios:
+        for user in usuario:
             print("ID:", user["_id"])
             print("Nome:", user["nome"])
             print("Endereço:", user["endereco"])

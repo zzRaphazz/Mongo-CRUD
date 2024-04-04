@@ -1,3 +1,3 @@
-def comprasUpdateMenu():
+def compraUpdateMenu():
     print("\nAtualizar Compra\n")
     input()

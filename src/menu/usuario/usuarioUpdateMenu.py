@@ -1,4 +1,4 @@
-from database.usuarios.usuarioUpdate import usuarioUpdate
+from database.usuario.usuarioUpdate import usuarioUpdate
 
 def usuarioUpdateMenu():
     filtro = {

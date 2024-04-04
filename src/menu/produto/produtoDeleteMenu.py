@@ -1,3 +1,3 @@
-def produtosDeleteMenu():
+def produtoDeleteMenu():
     print("\nDeletar Produto\n")
     input()

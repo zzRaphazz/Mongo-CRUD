@@ -9,10 +9,10 @@ def vendedorMenu():
     while execucao:
         print("-=-"*20)
         print("Vendedores")
-        print("1 - Criar Vendedor")
-        print("2 - Ler Vendedor")
-        print("3 - Atualizar Vendedor")
-        print("4 - Deletar Vendedor")
+        print("1 - Criar vendedor")
+        print("2 - Ler vendedor")
+        print("3 - Atualizar vendedor")
+        print("4 - Deletar vendedor")
         print("0 - Voltar")
         print("-=-"*20)
 

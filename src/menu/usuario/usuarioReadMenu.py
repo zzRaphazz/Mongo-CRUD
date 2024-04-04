@@ -1,4 +1,4 @@
-from database.usuarios.usuarioRead import usuarioRead, usuarioReadAll
+from database.usuario.usuarioRead import usuarioRead, usuarioReadAll
 
 def usuarioReadMenu():
     

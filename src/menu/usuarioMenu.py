@@ -9,10 +9,10 @@ def usuarioMenu():
     while execucao:
         print("-=-"*20)
         print("Usuários")
-        print("1 - Criar Usuário")
-        print("2 - Ler Usuário")
-        print("3 - Atualizar Usuário")
-        print("4 - Deletar Usuário")
+        print("1 - Criar usuario")
+        print("2 - Ler usuario")
+        print("3 - Atualizar usuario")
+        print("4 - Deletar usuario")
         print("0 - Voltar")
         print("-=-"*20)
 

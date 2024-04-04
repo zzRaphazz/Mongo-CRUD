@@ -1,4 +1,4 @@
 from database.connection import database
 
-def comprasCreate(compra):
+def compraCreate(compra):
     global database

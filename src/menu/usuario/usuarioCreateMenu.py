@@ -1,4 +1,4 @@
-from database.usuarios.usuarioCreate import usuarioCreate
+from database.usuario.usuarioCreate import usuarioCreate
 
 def usuarioCreateMenu():
     nome = str(input("Digite um nome: "))

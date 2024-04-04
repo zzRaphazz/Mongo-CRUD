@@ -1,4 +1,4 @@
-from database.usuarios.usuarioDelete import usuarioDelete
+from database.usuario.usuarioDelete import usuarioDelete
 
 def usuarioDeleteMenu():
     filtro = {

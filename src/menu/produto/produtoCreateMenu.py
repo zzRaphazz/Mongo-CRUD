@@ -1,8 +1,8 @@
 from database.connection import database
-from database.produtos.produtoCreate import produtoCreate
+from database.produto.produtoCreate import produtoCreate
 from bson.objectid import ObjectId
 
-def produtosCreateMenu():
+def produtoCreateMenu():
     nome = str(input("Digite um nome: "))
     descricao = str(input("Digite uma descrição: "))
 
