@@ -1,5 +1,6 @@
 import datetime
 
+
 def comprasCreateMenu():
     
     # Data

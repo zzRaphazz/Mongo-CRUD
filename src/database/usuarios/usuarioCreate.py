@@ -2,7 +2,6 @@ from database.connection import database
 
 def usuarioCreate(usuario):
     global database
-    
 
     try:
         database.usuario.insert_one(usuario)
