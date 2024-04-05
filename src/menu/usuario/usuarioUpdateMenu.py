@@ -1,18 +1,21 @@
 from database.usuario.usuarioUpdate import usuarioUpdate
 from database.connection import database
+from bson.objectid import ObjectId
 
 def usuarioUpdateMenu():
     global database
 
-    filtro = {
-        "nome": str(input("Digite o nome do usuario: ")).lower()
-    }
+    id = input("ID do usuario: ")
 
-    if filtro["nome"] == "":
+    if id == "":
         print()
-        print("Nome não pode ser vazio!")
+        print("ID não pode ser vazio!")
         input()
         return
+
+    filtro = {
+        "_id": ObjectId(id)
+    }
 
     usuario = database.usuario.find_one(filtro)
 

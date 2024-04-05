@@ -7,8 +7,7 @@ def produtoCreateMenu():
     descricao = str(input("Digite uma descrição: "))
 
     vendedorID = str(input("Digite o id do vendedor: "))
-    # id = ObjectId(vendedorID)
-    id = ObjectId("65e88681e8b9c289ed769491")
+    id = ObjectId(vendedorID)
 
     vendedor = database.vendedor.find_one({"_id": id})
     if vendedor == None:

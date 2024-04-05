@@ -5,15 +5,17 @@ from bson.objectid import ObjectId
 def produtoUpdateMenu():
     global database
 
-    filtro = {
-        "nome": str(input("Digite o nome do produto: ")).lower()
-    }
+    id = input("ID do produto: ")
 
-    if filtro["nome"] == "":
+    if id == "":
         print()
-        print("Nome não pode ser vazio!")
+        print("ID não pode ser vazio!")
         input()
         return
+
+    filtro = {
+        "_id": ObjectId(id)
+    }
     
     produto = database.produto.find_one(filtro)
 

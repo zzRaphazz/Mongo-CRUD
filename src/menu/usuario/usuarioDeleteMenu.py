@@ -1,15 +1,18 @@
 from database.usuario.usuarioDelete import usuarioDelete
+from bson.objectid import ObjectId
 
 def usuarioDeleteMenu():
-    filtro = {
-        "nome": input("Digite o nome do usuario: ").lower()
-    }
+    id = input("ID do usuario: ")
 
-    if filtro["nome"] == "":
+    if id == "":
         print()
-        print("Nome não pode ser vazio!")
+        print("ID não pode ser vazio!")
         input()
         return
+
+    filtro = {
+        "_id": ObjectId(id)
+    }
 
     usuarioDelete(filtro)
     input()

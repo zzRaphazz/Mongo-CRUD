@@ -1,15 +1,19 @@
 from database.produto.produtoDelete import produtoDelete
+from bson.objectid import ObjectId
 
 def produtoDeleteMenu():
-    filtro = {
-        "nome": input("Digite o nome do produto: ").lower()
-    }
 
-    if filtro["nome"] == "":
+    id = input("ID do produto: ")
+
+    if id == "":
         print()
-        print("Nome não pode ser vazio!")
+        print("ID não pode ser vazio!")
         input()
         return
+
+    filtro = {
+        "_id": ObjectId(id)
+    }
     
     produtoDelete(filtro)
     input()
