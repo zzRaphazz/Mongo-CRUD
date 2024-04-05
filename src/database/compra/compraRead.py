@@ -15,10 +15,22 @@ def compraRead(filter):
     else:
         for buy in compra:
             print("ID:", buy["_id"])
-            print("Data:", buy["data"])
-            print("Valor:", buy["valor"])
+            print("Data:", buy["data_compra"])
+            print("Valor:", buy["valor_total"])
             print("Usuario: ")
-            usuarioRead({"_id": buy["usuario"]})
+            print("     " + "ID:", buy["usuario"]["_id"])
+            print("     " + "Nome:", buy["usuario"]["nome"])
+            print("     " + "Endereço:", buy["usuario"]["endereco"])
+            print("Produtos: ")
+            for produto in buy["produto"]:
+                print("     " + "ID:", produto["_id"])
+                print("     " + "Nome:", produto["nome"])
+                print("     " + "Vendedor:")
+                print("         " + "ID:", produto["vendedor"]["_id"])
+                print("         " + "Nome:", produto["vendedor"]["nome"])
+                print("     " + "Descrição:", produto["descricao"])
+                print("     " + "Preço:", produto["preco"])
+                print()
             input()
 
 def compraReadAll():
