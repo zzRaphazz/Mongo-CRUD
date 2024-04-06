@@ -1,6 +1,7 @@
 from database.produto.produtoUpdate import produtoUpdate
 
 def recarregarProdutos(vendedor):
+    global database
     for produto in vendedor["produtos"]:
         novoProduto = {
             "vendedor": {
@@ -8,4 +9,6 @@ def recarregarProdutos(vendedor):
                 "nome": vendedor["nome"]
             }
         }
-        produtoUpdate({"_id": produto["_id"]}, novoProduto)
+        
+        database.produto.update_one({"_id": produto["_id"]}, { "$set": novoProduto })
+        
