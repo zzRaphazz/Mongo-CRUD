@@ -4,7 +4,7 @@ def vendedorUpdate(filtro, novoVendedor):
     global database
 
     try:
-        database.produto.update_one(filtro, { "$set": novoVendedor })
+        database.vendedor.update_one(filtro, { "$set": novoVendedor })
         print()
         print("Vendedor atualizado com sucesso!")
         input()

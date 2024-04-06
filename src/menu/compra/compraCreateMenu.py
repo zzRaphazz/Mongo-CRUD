@@ -43,7 +43,6 @@ def compraCreateMenu():
         produto = {
             "_id": produtoID,
             "nome": produtoNome,
-            "vendedor": produtoVendedor,
             "descricao": produtoDescricao,
             "preco": produtoPreco
         }
@@ -75,7 +74,7 @@ def compraCreateMenu():
         "usuario": usuario,
         "produto": produtos,
         "data_compra": data_compra,
-        "valor_total": 0
+        "valorTotal": valorTotal
     }
 
     compraCreate(compra)

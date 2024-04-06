@@ -1,3 +1,14 @@
+from database.vendedor.vendedorRead import vendedorRead, vendedorReadAll
+
 def vendedorReadMenu():
-    print("\nLer Vendedor\n")
-    input()
+    nome = str(input("Digite um nome: ")).lower()
+
+    if nome == "":
+        vendedorReadAll()
+        return
+
+    filtro = {
+        "nome": nome
+    }
+
+    vendedorRead(filtro)

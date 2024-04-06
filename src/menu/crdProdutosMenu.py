@@ -4,7 +4,7 @@ from function.excluirProdutos import excluirProdutos
 from database.connection import database
 from bson import ObjectId
 
-def compraUpdateProdutosMenu(produtos):
+def crdProdutosMenu(produtos):
     novosProdutos = produtos
     execucao = True
     while execucao:
@@ -28,13 +28,11 @@ def compraUpdateProdutosMenu(produtos):
                 print()
             else:
                 produtoNome = produtoCompleto["nome"]
-                produtoVendedor = produtoCompleto["vendedor"]
                 produtoDescricao = produtoCompleto["descricao"]
                 produtoPreco = produtoCompleto["preco"]
             novoProduto = {
                 "_id": produtoID,
                 "nome": produtoNome,
-                "vendedor": produtoVendedor,
                 "descricao": produtoDescricao,
                 "preco": produtoPreco
             }

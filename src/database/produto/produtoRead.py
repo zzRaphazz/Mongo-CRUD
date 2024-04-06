@@ -17,7 +17,7 @@ def produtoRead(filter):
             print("Nome:", product["nome"])
             print("Descrição:", product["descricao"])
             print("Preço:", product["preco"])
-            print("Estoque", product["estoque"])
+            print("Estoque:", product["estoque"])
 
             print("Vendedor:")
             print("     "+"ID:", product["vendedor"]["_id"])
@@ -42,7 +42,7 @@ def produtoReadAll():
             print("Nome:", product["nome"])
             print("Descrição:", product["descricao"])
             print("Preço:", product["preco"])
-            print("Estoque", product["estoque"])
+            print("Estoque:", product["estoque"])
 
             print("Vendedor:")
             print("     "+"ID:", product["vendedor"]["_id"])

@@ -25,7 +25,7 @@ def vendedorCreateMenu():
                 produtoDescricao = produtoCompleto["descricao"]
                 produtoPreco = produtoCompleto["preco"]
             produto = {
-                "id": produtoID,
+                "_id": produtoID,
                 "nome": produtoNome,
                 "descricao": produtoDescricao,
                 "preco": produtoPreco

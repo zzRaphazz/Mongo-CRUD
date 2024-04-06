@@ -16,14 +16,18 @@ def vendedorRead(filter):
             print("ID:", v["_id"])
             print("Nome:", v["nome"])
             print("RG:", v["rg"])
-            for produto in v["produtos"]:
-                print("Produto:")
-                print("     "+"ID:", produto["_id"])
-                print("     "+"Nome:", produto["nome"])
-                print("     "+"Descrição:", produto["descricao"])
-                print("     "+"Preço:", produto["preco"])
-                print("     "+"Estoque", produto["estoque"])
-                print()
+            if v["produtos"] == []:
+                print("Nenhum produto cadastrado!")
+            else:
+                for produto in v["produtos"]:
+                    print("Produto:")
+                    print("     "+"ID:", produto["id"])
+                    print("     "+"Nome:", produto["nome"])
+                    print("     "+"Descrição:", produto["descricao"])
+                    print("     "+"Preço:", produto["preco"])
+                    print("     "+"Estoque", produto["estoque"])
+                    print()
+            input()
 
 def vendedorReadAll():
     global database
@@ -41,11 +45,15 @@ def vendedorReadAll():
             print("ID:", v["_id"])
             print("Nome:", v["nome"])
             print("RG:", v["rg"])
-            for produto in v["produtos"]:
-                print("Produto:")
-                print("     "+"ID:", produto["_id"])
-                print("     "+"Nome:", produto["nome"])
-                print("     "+"Descrição:", produto["descricao"])
-                print("     "+"Preço:", produto["preco"])
-                print("     "+"Estoque", produto["estoque"])
+            print("Produtos:")    
+            if v["produtos"] == []:
+                print("     "+"Nenhum produto cadastrado!")
                 print()
+            else:
+                for produto in v["produtos"]:
+                    print("     "+"ID:", produto["id"])
+                    print("     "+"Nome:", produto["nome"])
+                    print("     "+"Descrição:", produto["descricao"])
+                    print("     "+"Preço:", produto["preco"])
+                    print()
+            input()

@@ -1,7 +1,7 @@
 from database.compra.compraUpdate import compraUpdate
 from database.connection import database
 from bson.objectid import ObjectId
-from menu.compra.compraUpdateProdutosMenu import compraUpdateProdutosMenu
+from menu.crdProdutosMenu import crdProdutosMenu
 import datetime
 
 def compraUpdateMenu():
@@ -53,8 +53,7 @@ def compraUpdateMenu():
 
     opcao = str(input("Deseja alterar os produtos? (s/n) "))
     if opcao == "s":
-        produtos = compraUpdateProdutosMenu(compra["produto"])
-        print(produtos)
+        produtos = crdProdutosMenu(compra["produto"])
     else:
         produtos = compra["produto"]
 
@@ -72,7 +71,7 @@ def compraUpdateMenu():
     compra = {
         "usuario": usuario,
         "produto": produtos,
-        "data": data_compra,
+        "data_compra": data_compra,
         "valorTotal": valorTotal
     }
 

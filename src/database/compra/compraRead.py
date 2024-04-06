@@ -16,7 +16,7 @@ def compraRead(filter):
         for buy in compra:
             print("ID:", buy["_id"])
             print("Data:", buy["data_compra"])
-            print("Valor:", buy["valor_total"])
+            print("Valor:", buy["valorTotal"])
             print("Usuario: ")
             print("     " + "ID:", buy["usuario"]["_id"])
             print("     " + "Nome:", buy["usuario"]["nome"])
@@ -25,9 +25,6 @@ def compraRead(filter):
             for produto in buy["produto"]:
                 print("     " + "ID:", produto["_id"])
                 print("     " + "Nome:", produto["nome"])
-                print("     " + "Vendedor:")
-                print("         " + "ID:", produto["vendedor"]["_id"])
-                print("         " + "Nome:", produto["vendedor"]["nome"])
                 print("     " + "Descrição:", produto["descricao"])
                 print("     " + "Preço:", produto["preco"])
                 print()
@@ -48,7 +45,7 @@ def compraReadAll():
         for buy in compra:
             print("ID:", buy["_id"])
             print("Data:", buy["data_compra"])
-            print("Valor:", buy["valor_total"])
+            print("Valor:", buy["valorTotal"])
             print("Usuario: ")
             print("     " + "ID:", buy["usuario"]["_id"])
             print("     " + "Nome:", buy["usuario"]["nome"])
@@ -57,9 +54,6 @@ def compraReadAll():
             for produto in buy["produto"]:
                 print("     " + "ID:", produto["_id"])
                 print("     " + "Nome:", produto["nome"])
-                print("     " + "Vendedor:")
-                print("         " + "ID:", produto["vendedor"]["_id"])
-                print("         " + "Nome:", produto["vendedor"]["nome"])
                 print("     " + "Descrição:", produto["descricao"])
                 print("     " + "Preço:", produto["preco"])
                 print()
