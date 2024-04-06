@@ -19,9 +19,12 @@ def produtoRead(filter):
             print("Preço:", product["preco"])
             print("Estoque:", product["estoque"])
 
-            print("Vendedor:")
-            print("     "+"ID:", product["vendedor"]["_id"])
-            print("     "+"Nome:", product["vendedor"]["nome"])
+            if product["vendedor"] == None:
+                print("Vendedor não encontrado!")
+            else:
+                print("Vendedor:")
+                print("     "+"ID:", product["vendedor"]["_id"])
+                print("     "+"Nome:", product["vendedor"]["nome"])
 
             input()
 
@@ -44,8 +47,11 @@ def produtoReadAll():
             print("Preço:", product["preco"])
             print("Estoque:", product["estoque"])
 
-            print("Vendedor:")
-            print("     "+"ID:", product["vendedor"]["_id"])
-            print("     "+"Nome:", product["vendedor"]["nome"])
+            if product["vendedor"] == {}:
+                print("Vendedor não encontrado!")
+            else:
+                print("Vendedor:")
+                print("     "+"ID:", product["vendedor"]["_id"])
+                print("     "+"Nome:", product["vendedor"]["nome"])
 
             input()

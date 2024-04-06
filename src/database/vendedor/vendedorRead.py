@@ -51,7 +51,7 @@ def vendedorReadAll():
                 print()
             else:
                 for produto in v["produtos"]:
-                    print("     "+"ID:", produto["id"])
+                    print("     "+"ID:", produto["_id"])
                     print("     "+"Nome:", produto["nome"])
                     print("     "+"Descrição:", produto["descricao"])
                     print("     "+"Preço:", produto["preco"])

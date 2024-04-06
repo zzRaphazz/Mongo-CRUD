@@ -1,6 +1,7 @@
 from database.vendedor.vendedorCreate import vendedorCreate
 from database.connection import database
 from bson.objectid import ObjectId
+from function.recarregarProdutos import recarregarProdutos
 
 def vendedorCreateMenu():
     nome = str(input("Digite um nome: "))
@@ -43,3 +44,4 @@ def vendedorCreateMenu():
     }
 
     vendedorCreate(vendedor)
+    recarregarProdutos(vendedor)

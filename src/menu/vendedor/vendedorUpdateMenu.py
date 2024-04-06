@@ -2,6 +2,7 @@ from database.vendedor.vendedorUpdate import vendedorUpdate
 from database.connection import database
 from bson.objectid import ObjectId
 from menu.crdProdutosMenu import crdProdutosMenu
+from function.recarregarProdutos import recarregarProdutos
 
 def vendedorUpdateMenu():
     global database
@@ -51,3 +52,13 @@ def vendedorUpdateMenu():
     }
 
     vendedorUpdate(filtro, vendedor)
+
+    vendedor = {
+        "_id": ObjectId(id),
+        "nome": nome.lower(),
+        "rg": rg.lower(),
+        "produtos": produtos
+    }
+
+    recarregarProdutos(vendedor)
+    

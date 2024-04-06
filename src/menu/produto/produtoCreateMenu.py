@@ -6,18 +6,6 @@ def produtoCreateMenu():
     nome = str(input("Digite um nome: "))
     descricao = str(input("Digite uma descrição: "))
 
-    vendedorID = str(input("Digite o id do vendedor: "))
-    id = ObjectId(vendedorID)
-
-    vendedor = database.vendedor.find_one({"_id": id})
-    if vendedor == None:
-        print()
-        print("Vendedor não encontrado!")
-        input()
-        return
-    else:
-        vendedorNome = vendedor["nome"]
-
     try:
         preco = float(input("Digite um preço: "))
     except:
@@ -36,10 +24,7 @@ def produtoCreateMenu():
 
     produto = {
         "nome": nome.lower(),
-        "vendedor": {
-            "_id": id,
-            "nome": vendedorNome
-        },
+        "vendedor": {},
         "descricao": descricao.lower(),
         "preco": preco,
         "estoque": estoque,
