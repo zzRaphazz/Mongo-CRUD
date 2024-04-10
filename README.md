@@ -24,7 +24,7 @@ Para executar este projeto, você precisará de:
 - Acesso ao MongoDB, que pode ser uma instância local ou em nuvem (MongoDB Atlas).
 - Biblioteca pymongo instalada, que pode ser feita através do comando
 
-        pip install pymongo.
+        pip install pymongo
 
 ## ⚙️ Configuração e Execução
 
