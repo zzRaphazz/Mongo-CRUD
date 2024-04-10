@@ -5,6 +5,13 @@ from function.recarregarProdutos import recarregarProdutos
 
 def vendedorCreateMenu():
     nome = str(input("Digite um nome: "))
+
+    if nome == "":
+        print()
+        print("Nome inválido!")
+        input()
+        return
+
     rg = str(input("Digite um rg: "))
 
     produtos = []

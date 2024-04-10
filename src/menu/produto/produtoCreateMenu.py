@@ -4,6 +4,12 @@ from bson.objectid import ObjectId
 
 def produtoCreateMenu():
     nome = str(input("Digite um nome: "))
+    if nome == "":
+        print()
+        print("Nome inválido!")
+        input()
+        return
+
     descricao = str(input("Digite uma descrição: "))
 
     try:
