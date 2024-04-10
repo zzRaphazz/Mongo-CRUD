@@ -13,10 +13,10 @@ def usuarioRead(filter):
         input()
     else:
         for user in usuario:
-            print("ID:", user["_id"])
-            print("Nome:", user["nome"])
-            print("Endereço:", user["endereco"])
-            print("RG:", user["rg"])
+            print("_id:", user["_id"])
+            print("nome:", user["nome"])
+            print("endereco:", user["endereco"])
+            print("rg:", user["rg"])
             input()
 
 def usuarioReadAll():

@@ -1,8 +1,8 @@
 def mostrarProdutos(produtos):
     print("Produtos:")
     for produto in produtos:
-        print("     "+"ID:", produto["_id"])
-        print("     "+"Nome:", produto["nome"])
-        print("     "+"Descrição:", produto["descricao"])
-        print("     "+"Preço:", produto["preco"])
+        print("     "+"_id:", produto["_id"])
+        print("     "+"nome:", produto["nome"])
+        print("     "+"descricao:", produto["descricao"])
+        print("     "+"preco:", produto["preco"])
         print()

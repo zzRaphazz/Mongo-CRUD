@@ -42,18 +42,17 @@ def vendedorReadAll():
         input()
     else:
         for v in vendedor:
-            print("ID:", v["_id"])
-            print("Nome:", v["nome"])
-            print("RG:", v["rg"])
-            print("Produtos:")    
+            print("_id:", v["_id"])
+            print("nome:", v["nome"])
+            print("rg:", v["rg"])
+            print("produtos:")    
             if v["produtos"] == []:
-                print("     "+"Nenhum produto cadastrado!")
-                print()
+                print("     "+"nenhum produto cadastrado!")
             else:
                 for produto in v["produtos"]:
-                    print("     "+"ID:", produto["_id"])
-                    print("     "+"Nome:", produto["nome"])
-                    print("     "+"Descrição:", produto["descricao"])
-                    print("     "+"Preço:", produto["preco"])
-                    print()
+                    print("     "+"_id:", produto["_id"])
+                    print("     "+"nome:", produto["nome"])
+                    print("     "+"descricao:", produto["descricao"])
+                    print("     "+"preco:", produto["preco"])
+                    print("     "+"--------------------")
             input()

@@ -13,19 +13,17 @@ def produtoRead(filter):
         input()
     else:
         for product in produto:
-            print("ID:", product["_id"])
-            print("Nome:", product["nome"])
-            print("Descrição:", product["descricao"])
-            print("Preço:", product["preco"])
-            print("Estoque:", product["estoque"])
-
-            if product["vendedor"] == None:
-                print("Vendedor não encontrado!")
+            print("_id:", product["_id"])
+            print("nome:", product["nome"])
+            if product["vendedor"] == {}:
+                print("vendedor não encontrado!")
             else:
-                print("Vendedor:")
-                print("     "+"ID:", product["vendedor"]["_id"])
-                print("     "+"Nome:", product["vendedor"]["nome"])
-
+                print("vendedor:")
+                print("     "+"_id:", product["vendedor"]["_id"])
+                print("     "+"nome:", product["vendedor"]["nome"])
+            print("descricao:", product["descricao"])
+            print("preco:", product["preco"])
+            print("estoque:", product["estoque"])
             input()
 
 def produtoReadAll():
@@ -41,17 +39,15 @@ def produtoReadAll():
         input()
     else:
         for product in produto:
-            print("ID:", product["_id"])
-            print("Nome:", product["nome"])
-            print("Descrição:", product["descricao"])
-            print("Preço:", product["preco"])
-            print("Estoque:", product["estoque"])
-
+            print("_id:", product["_id"])
+            print("nome:", product["nome"])
             if product["vendedor"] == {}:
-                print("Vendedor não encontrado!")
+                print("vendedor não encontrado!")
             else:
-                print("Vendedor:")
-                print("     "+"ID:", product["vendedor"]["_id"])
-                print("     "+"Nome:", product["vendedor"]["nome"])
-
+                print("vendedor:")
+                print("     "+"_id:", product["vendedor"]["_id"])
+                print("     "+"nome:", product["vendedor"]["nome"])
+            print("descricao:", product["descricao"])
+            print("preco:", product["preco"])
+            print("estoque:", product["estoque"])
             input()
