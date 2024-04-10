@@ -27,7 +27,7 @@ def vendedorUpdateMenu():
         return
     
     print()
-    print(f"- Você esta alterando o vendedor {vendedor["nome"]} -")
+    print(f"- Você esta alterando o vendedor {vendedor['nome']} -")
     print("Deixe em branco para manter o mesmo valor")
     print()
 

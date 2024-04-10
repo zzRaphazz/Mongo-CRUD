@@ -1,4 +1,5 @@
 from database.produto.produtoUpdate import produtoUpdate
+from database.connection import database
 
 def recarregarProdutos(vendedor):
     global database

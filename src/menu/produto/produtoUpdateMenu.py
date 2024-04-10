@@ -24,7 +24,7 @@ def produtoUpdateMenu():
         return
     
     print()
-    print(f"- Você esta alterando o produto {produto["nome"]} -")
+    print(f"- Você esta alterando o produto {produto['nome']} -")
     print("Deixe em branco para manter o mesmo valor")
     print()
 

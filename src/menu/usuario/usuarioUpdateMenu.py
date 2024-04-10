@@ -24,7 +24,7 @@ def usuarioUpdateMenu():
         return
 
     print()
-    print(f"- Você esta alterando o usuario {usuario["nome"]} -")
+    print(f"- Você esta alterando o usuario {usuario['nome']} -")
     print("Deixe em branco para manter o mesmo valor")
     print()
 
