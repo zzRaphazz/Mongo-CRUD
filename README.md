@@ -36,7 +36,7 @@ Para executar este projeto, você precisará de:
 
         pip install pymongo
 
-3. **Coloque sua senha do banco:** Abra o arquivo [connection.py](src/database/connection.py), e mude o <password> para a senha do root.
+3. **Coloque sua senha do banco:** Abra o arquivo [connection.py](src/database/connection.py), e mude o campo password para a senha do root.
 
 ### Como Executar:
 
